@@ -1,0 +1,65 @@
+/* pages/consultation_list.wxss */
+.consultation_list .van-hairline--top-bottom::after {
+    border-width: 0 0;
+}
+.sub-tab .van-tab{
+    color: #333;
+    font-size: 28rpx;
+}
+.sub-tab .van-tab--active{
+    font-weight: bold;
+}
+.content{
+    padding: 0 20rpx 30rpx;
+    overflow: hidden;
+}
+.content .item{
+    width: 344rpx;
+    height: 420rpx;
+    margin-top: 20rpx;
+    box-shadow:0px 5rpx 9rpx 1rpx rgba(78,78,78,0.1);
+    border-radius:20rpx;
+    text-align: center;
+    padding: 20rpx;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-right: 22rpx;
+}
+.content .item:nth-child(2n){
+    margin-right: 0;
+}
+.content .item .head-img{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.content .item .name{
+    font-size:34rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:42rpx;
+}
+.content .item .p{
+    font-size:22rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:42rpx;
+}
+.content .item .btn{
+    height:52rpx;
+    line-height: 52rpx;
+    background:linear-gradient(45deg, rgba(221,199,155,1) 0%,rgba(251,239,219,1) 100%);
+    border-radius:26rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    position: absolute;
+    bottom: 20rpx;
+    left: 20rpx;
+    right: 20rpx;
+}

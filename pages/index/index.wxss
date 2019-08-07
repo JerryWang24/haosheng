@@ -1,0 +1,56 @@
+/**index.wxss**/
+.nav-tool{
+  width: 100%;
+  background:rgba(221,199,155,1);
+  overflow: hidden;
+  position: relative;
+  font-weight: lighter;
+}
+.nav-tool .van-icon{
+    color: #B09A6D !important;  
+    font-size: 40rpx !important;  
+}
+.swiper-container{
+  width: 106%;
+  margin:30rpx 0;
+  position: relative;
+}
+swiper {
+  width:100%;
+  height: 360rpx;
+}
+swiper swiper-item{
+  box-sizing: border-box;
+  /* padding:10rpx; */
+}
+.le-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(0.91);
+  transition: all 0.4s ease;
+  border-radius: 20rpx;
+}
+.le-img.le-active {
+  transform: scale(1);
+  /* box-shadow: 0 0 10rpx rgb(150, 140, 140); */
+}
+.swiper-container .dots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40rpx;
+  display: flex;
+  justify-content: center;
+}
+.swiper-container .dots .dot{
+  margin: 0 17rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background: #ECECEC;
+  border-radius: 100%;
+  transition: all .6s;
+}
+.swiper-container .dots .dot.active{
+  background: #DDC79B;
+}

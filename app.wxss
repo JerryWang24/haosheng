@@ -1,0 +1,48 @@
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+body{
+    color: #333;
+}
+
+/* tabBox */
+.tabBox{
+    background:rgba(221,199,155,1);
+    display: flex;
+    width: 100%;
+}
+.tabBox .t{
+    height: 80rpx;
+    line-height: 80rpx;
+    flex: 1;
+    text-align: center;
+    font-size:28rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    position: relative;
+    z-index: 11;
+}
+.tabBox .t.active{
+    font-weight:bold;
+}
+.tabBox .t.active::after{
+    content: '';
+    display: block;
+    width: 100rpx;
+    height: 8rpx;
+    border-radius: 8rpx;
+    background-color: #fff;
+    position: absolute;
+    bottom: 8rpx;
+    left: 50%;
+    margin-left: -50rpx;
+    z-index: 11;
+}
