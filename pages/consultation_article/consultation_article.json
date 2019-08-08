@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-      "van-cell": "../../components/cell/index"
+      "van-cell": "../../components/cell/index",
+      "van-rate": "../../components/rate/index"
   },
     "navigationBarTitleText": "咨询详情"
 }

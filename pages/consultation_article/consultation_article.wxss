@@ -1,7 +1,138 @@
 /* pages/consultation_article/consultation_article.wxss */
+.consultation_article{
+    padding-bottom: 140rpx;
+}
 .item{
     background:rgba(255,255,255,1);
-    box-shadow:0px 5px 9px 1px rgba(78,78,78,0.1);
-    border-radius:20px;
+    box-shadow:0px 5rpx 9rpx 1rpx rgba(78,78,78,0.1);
+    border-radius:20rpx;
     margin: 0 20rpx 20rpx;
+    overflow: hidden;
+}
+.row{
+    display: flex;
+}
+.head-img{
+    width: 176rpx;
+    height: 176rpx;
+    margin: 42rpx 0 0 42rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.head-img .img{
+    width: 100%;
+    height: 100%;
+}
+.c-info .detail{
+    margin-left: 44rpx;
+}
+.c-info .detail .name{
+    padding: 62rpx 0 32rpx;
+    font-size:34rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+
+}
+.c-info .detail .name .eval{
+    font-size:28rpx;
+    color:rgba(221,199,155,1);
+    display: inline-block;
+    margin-left: 40rpx;
+}
+.c-info .detail .p{
+    font-size:22rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:32rpx;
+}
+.item .van-cell{
+    margin-top: 40rpx;
+    border-top: 2px solid rgba(244,244,244,1);
+    padding: 30rpx;
+    font-size: 28rpx;
+}
+.item .van-cell .van-cell__value{
+    color: #333;
+}
+.section{
+    padding: 35rpx 35rpx 20rpx 30rpx;
+    border-bottom: 2rpx solid rgba(244,244,244,1);
+}
+.section:last-child{
+    border-bottom: none;
+}
+.section .title{
+    font-size:28rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:32rpx;
+}
+.section .p{
+    padding-top: 20rpx;
+    font-size:22rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:32rpx;
+}
+.eval-box .title{
+    font-size:28rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    padding: 35rpx 0 15rpx 30rpx;
+}
+.eval-list .e-li{
+    padding: 20rpx 30rpx;
+    border-bottom: 2rpx solid rgba(244,244,244,1);
+}
+.eval-list .e-li .user-info{
+    display: flex;
+    flex: 1;
+}
+.eval-list .e-li .user-info .head-img{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 15rpx 0 0;
+}
+.eval-list .e-li .user-info .detail{
+    flex: 1;
+    margin-left: 0;
+    color:rgba(51,51,51,1);
+}
+.eval-list .e-li .user-info .detail .name{
+    font-size:22rpx;
+    padding-top: 4rpx;
+}
+.eval-list .e-li .user-info .detail .date{
+    font-size:18rpx;
+}
+.remark{
+    padding-top: 15rpx;
+    font-size:22rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:bold;
+    color:rgba(153,153,153,1);
+    line-height:32rpx;
+}
+
+.f-tool{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.f-tool .btn{
+    flex: 1;
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size:34rpx;
+    font-family:PingFang-SC-Regular;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    text-align: center;
 }

@@ -2,7 +2,7 @@
 <view class="consultation_article">
     <view class="item c-info">
         <view class="row">
-            <view class="head-img"><image src="../../images/zx_icon_zhinan.png" class="z-icon"></image></view>
+            <view class="head-img"><image src="../../images/img-1.png" class="img"></image></view>
             <view class="detail">
                 <view class="name">李晓明 <view class="eval">4.7分</view></view>
                 <view class="p">国家二级金融分析师</view>
@@ -11,5 +11,62 @@
             </view>
         </view>
         <van-cell title="预约费用" value="800积分" />
+    </view>
+
+    <view class="item">
+        <view class="section">
+            <view class="title">资费说明</view>
+            <view class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus</view>
+        </view>
+        <view class="section">
+            <view class="title">擅长邻域</view>
+            <view class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</view>
+        </view>
+        <view class="section">
+            <view class="title">个人介绍</view>
+            <view class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</view>
+        </view>
+    </view>
+
+    <view class="item eval-box">
+        <view class="title">用户评价</view>
+        <view class="eval-list">
+            <view class="e-li">
+                <view class="row">
+                    <view class="user-info">
+                        <view class="head-img"><image src="../../images/img-1.png" class="img"></image></view>
+                        <view class="detail">
+                            <view class="name">用户名称</view>
+                            <view class="date">2019-08-07  12:23:34</view>
+                        </view>
+                    </view>
+                    <van-rate readonly value="{{ stars }}" color="#DDC79B" void-color="#DDC79B" size="15" />
+                </view>
+                <view class="remark">很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务</view>
+            </view>
+            <view class="e-li">
+                <view class="row">
+                    <view class="user-info">
+                        <view class="head-img"><image src="../../images/img-1.png" class="img"></image></view>
+                        <view class="detail">
+                            <view class="name">用户名称</view>
+                            <view class="date">2019-08-07  12:23:34</view>
+                        </view>
+                    </view>
+                    <van-rate readonly value="{{ stars }}" color="#DDC79B" void-color="#DDC79B" size="15" />
+                </view>
+                <view class="remark">很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务 很不错的咨询服务</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- f-tool -->
+    <view class="f-tool">
+        <view class="btn">
+            <view class="txt">1次</view>
+            <view class="intro">免费专家咨询次数</view>
+        </view>
+        <view class="btn">客服</view>
+        <view class="btn">预约</view>
     </view>
 </view>
