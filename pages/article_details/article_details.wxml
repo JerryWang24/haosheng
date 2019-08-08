@@ -1,0 +1,21 @@
+<!--pages/article_details/article_details.wxml-->
+<view class='wrapper'>
+    <view class='title'>“死亡之城”切尔诺贝利：人祸酿成史上最大核泄漏事故</view>
+    <view class='date'>2019-07-09  13:24</view>
+    <view class='audio-box'><audio controls src="http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46"></audio></view>
+    <rich-text>fdsfs</rich-text>
+    <view class='bottom-box'>
+        <view class='item-box'>
+            <image src='/images/xiangping_shoucang.png' mode='widthFix'/>
+            <view class="p">加入收藏</view>
+        </view>
+        <view class='item-box'>
+            <image src='/images/xiangping_fenxiang.png'  mode='widthFix'/>
+            <view class="p">分享给好友</view>
+        </view>
+        <view class='item-box'>
+            <image src='/images/xiangping_baocun.png'  mode='widthFix'/>
+            <view class="p">保存图片</view>
+        </view>
+    </view>
+</view>

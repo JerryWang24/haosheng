@@ -1,12 +1,13 @@
 {
     "pages": [
-        "pages/my_index/my_index",
         "pages/article_index/article_index",
+        "pages/article_details/article_details",
+        "pages/my_like/my_like",
+        "pages/my_index/my_index",
         "pages/index/index",
         "pages/consultation_article/consultation_article",
         "pages/consultation_list/consultation_list",
-        "pages/consultation_guide/consultation_guide",
-        "pages/logs/logs"
+        "pages/consultation_guide/consultation_guide"
     ],
     "window": {
         "backgroundTextStyle": "light",

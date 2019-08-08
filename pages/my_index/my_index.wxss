@@ -40,6 +40,9 @@ page{
     color: #333;
     font-weight:bold;
 }
+.infos-box .r-box .name.unlogin{
+    color: #999999;
+}
 .infos-box .r-box .role{
     font-size:28rpx;
     color: #999;
