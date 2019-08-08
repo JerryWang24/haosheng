@@ -1,0 +1,4 @@
+<!--pages/consultation_guide/consultation_guide.wxml-->
+<view class="consultation_guide">
+    <rich-text type="text" nodes="{{nodes}}"></rich-text>
+</view>

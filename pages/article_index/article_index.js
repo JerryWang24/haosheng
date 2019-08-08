@@ -1,20 +1,24 @@
-// pages/product_list/product_list.js
+// pages/article_index/article_index.js
+const app = getApp()
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        navH: 0,
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
+    onLoad: function () {
+        console.log(app.globalData.navHeight)
+        this.setData({
+            navH: app.globalData.navHeight
+        });
 
     },
-
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

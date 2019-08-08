@@ -1,0 +1,121 @@
+/* pages/my_index/my_index.wxss */
+page{
+    padding: 30rpx 0;
+    box-sizing: border-box;
+}
+.bg-line{
+    height: 124rpx;
+    background: #DDC79B;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.com-box{
+    position: relative;
+    z-index: 2;
+    box-shadow:0px 5rpx 9rpx 1rpx rgba(78,78,78,0.1);
+    width: 94%;
+    margin:0 auto 20rpx;
+    border-radius: 20rpx;
+    background: #fff;
+}
+.infos-box{
+    padding:30rpx;
+    box-sizing: border-box;
+    display: flex;
+}
+.infos-box image{
+    width:140rpx;
+    height: 140rpx;
+    border-radius: 100%;
+}
+.infos-box .r-box{
+    padding-top: 25rpx;
+    box-sizing: border-box;
+    margin-left: 69rpx;
+}
+.infos-box .r-box .name{
+    font-size:36rpx;
+    color: #333;
+    font-weight:bold;
+}
+.infos-box .r-box .role{
+    font-size:28rpx;
+    color: #999;
+    padding-top: 20rpx;
+}
+.infos-box.other image{
+    width:120rpx;
+    height: 120rpx;
+}
+.infos-box.other .r-box{
+    margin-left: 39rpx;
+    padding-top: 10rpx;
+}
+.infos-box.other .r-box .role{
+    display: block;
+    font-size: 22rpx;
+    padding-top: 5rpx;
+    line-height: 28rpx;
+}
+.infos-box.other .r-box .name{
+    font-size: 34rpx;
+}
+.bottom-box{
+    width: 100%;
+    display: flex;
+    padding:9rpx 0;
+    border-top: 1rpx solid #f4f4f4;
+}
+.bottom-box.other .item-box{
+    height: 70rpx;
+    line-height: 70rpx;
+}
+.bottom-box.other .item-box image{
+    width: 42rpx;
+    vertical-align: top;
+    margin-right: 40rpx;
+    margin-top: 19rpx;
+}
+.bottom-box.other .item-box:first-child{
+    line-height: 70rpx;
+    padding:0;
+}
+.bottom-box.other .item-box:first-child image{
+    width: 35rpx;
+}
+.bottom-box .item-box{
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    color: #333;
+    font-size: 28rpx;
+}
+.bottom-box .item-box:first-child{
+    border-right: 1rpx solid #f4f4f4;
+    line-height: 42rpx;
+    padding-top: 10rpx;
+}
+.com-title{
+    margin-top: 30rpx;
+    padding:20rpx 0 20rpx 54rpx;
+}
+.zx-box{
+    display: flex;
+    padding:30rpx 0 ;
+}
+.zx-box .item-box{
+    flex: 1;
+    text-align: center;
+}
+.zx-box .item-box image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.zx-box .item-box .p{
+    color: #333333;
+    font-size: 22rpx;
+    margin-top: 15rpx;
+}

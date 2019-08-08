@@ -1,21 +1,137 @@
 <!--index.wxml-->
 <view class="container">
-  <!--WXML示例代码-->
-  <view class="nav-tool"  style='height:{{navH}}px'>
-    <van-search value="{{ value }}" placeholder="搜索文章/咨询" placeholder-style="color:#B09A6D;" field-class="search"/>
-  </view>
-  <view class='swiper-container'>
-    <swiper  previous-margin='90rpx'  next-margin='90rpx' bindchange="swiperChange" >
-      <block wx:for="{{imgUrls}}">
-        <swiper-item>
-          <image class='le-img {{nowIdx==index?"le-active":""}}'  src='{{item}}'/>
-        </swiper-item>
-      </block>
-    </swiper>
-    <view class="dots">
-        <block wx:for="{{imgUrls}}" wx:key="this">
-            <view class="dot{{index == nowIdx ? ' active' : ''}}"></view>
-        </block>
+    <!--分割线-->
+    <view class="nav-tool"  style='height:{{navH}}px'>
+        <van-search value="{{ value }}" placeholder="搜索文章/咨询" placeholder-style="color:#B09A6D;" field-class="search"/>
     </view>
-  </view>
+    <view  style='height:{{navH}}px'></view><!-- 自定义导航站位 -->
+    <!--分割线-->
+    <view class='swiper-container'>
+        <swiper  previous-margin='97rpx'  next-margin='97rpx' bindchange="swiperChange" >
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+            <image class='le-img {{nowIdx==index?"le-active":""}}'  src='{{item}}'/>
+            </swiper-item>
+        </block>
+        </swiper>
+        <view class="dots">
+            <block wx:for="{{imgUrls}}" wx:key="this">
+                <view class="dot{{index == nowIdx ? ' active' : ''}}"></view>
+            </block>
+        </view>
+    </view>
+    <!--分割线-->
+    <view class='btn-banner'>
+        <image src='/images/vip_beijing.png' mode="widthFix"/>
+        <navigator class="com-circle-org" url=''>立即加入</navigator>
+    </view>
+    <!--视频推荐-->
+    <view class='vedio-box'>
+        <view class='com-title'>视频推荐<van-icon name="arrow" color="#999" size="45rpx"/></view>
+        <scroll-view scroll-x class='scroll-view'  bindscroll="scroll">
+            <view class='big-box'>
+                <view class='item-box'>
+                    <image src='/images/img-1.png' mode="widthFix"/>
+                    <text>24届WTO国际大会开幕24届WTO国际大会开幕...</text>
+                </view>
+                <view class='item-box'>
+                    <image src='/images/img-1.png' mode="widthFix"/>
+                    <text>24届WTO国际大会开幕24届WTO国际大会开幕...</text>
+                </view>
+                <view class='item-box'>
+                    <image src='/images/img-1.png' mode="widthFix"/>
+                    <text>24届WTO国际大会开幕24届WTO国际大会开幕...</text>
+                </view>
+                <view style="flex:0 0 20rpx;"></view>
+            </view>
+        </scroll-view>
+    </view>
+    <!--文章推荐-->
+    <view class='article-big-box'>
+        <view class='com-title'>文章推荐<van-icon name="arrow" color="#999" size="45rpx"/></view>
+        <view class='article-box'>
+            <navigator class='item-box'>
+                <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                <view class='info-box'>
+                    <text class='btn'>VIP专属</text>
+                    <text class='date'>2019-08-9 13:24</text>
+                    <text class='from'>金融证券</text>
+                </view>
+            </navigator>
+            <navigator class='item-box hasImg'>
+                <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                <view class='img-box'>
+                    <image src='/images/img-1.png'/>
+                    <image src='/images/img-1.png'/>
+                </view>
+                <view class='info-box'>
+                    <text class='btn'>VIP专属</text>
+                    <text class='date'>2019-08-9 13:24</text>
+                    <text class='from'>金融证券</text>
+                </view>
+            </navigator>
+            <navigator class='item-box hasImg'>
+                <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                <view class='img-box'>
+                    <image src='/images/img-1.png'/>
+                    <image src='/images/img-1.png'/>
+                </view>
+                <view class='info-box'>
+                    <text class='btn'>VIP专属</text>
+                    <text class='date'>2019-08-9 13:24</text>
+                    <text class='from'>金融证券</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <!--咨询推荐-->
+    <view class='cslta-big-box'>
+        <view class='com-title'>咨询推荐<van-icon name="arrow" color="#999" size="45rpx"/></view>
+        <view class="cslta-box">
+            <navigator class="item-box" url="/">
+                <view class='info-box'>
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class='right-box'>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                    </view>
+                </view>
+                <view class="btn">线上咨询  800积分/次</view>
+            </navigator>
+            <navigator class="item-box gupiao" url="/">
+                <view class='info-box'>
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class='right-box'>
+                        <view class="name">股票咨询</view>
+                        <view class="p">专业的股票分析，实时股票服务</view>
+                    </view>
+                </view>
+                <view class="btn">线上咨询</view>
+            </navigator>
+            <navigator class="item-box" url="/">
+                <view class='info-box'>
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class='right-box'>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                    </view>
+                </view>
+                <view class="btn">线上咨询  800积分/次</view>
+            </navigator>
+            <navigator class="item-box" url="/">
+                <view class='info-box'>
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class='right-box'>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                    </view>
+                </view>
+                <view class="btn">线上咨询  800积分/次</view>
+            </navigator>
+        </view>
+    </view>
 </view>
+

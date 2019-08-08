@@ -23,6 +23,7 @@ VantComponent({
         sticky: Boolean,
         animated: Boolean,
         swipeable: Boolean,
+        bindClass: String,
         lineWidth: {
             type: Number,
             value: -1

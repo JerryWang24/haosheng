@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "van-cell": "../../components/cell/index"
+  },
+    "navigationBarTitleText": "咨询详情"
+}

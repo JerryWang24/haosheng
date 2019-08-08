@@ -1,51 +1,123 @@
 <!--pages/consultation_list.wxml-->
 <view class="consultation_list">
-    <view class="tabBox">
-        <view class="t active">专家咨询</view>
-        <navigator class="t" url="../product_list/product_list">产品咨询</navigator>
+    <!-- 自定义导航栏 -->
+    <view class="nav-tool"  style='height:{{navH}}px'>
+        <van-search value="{{ value }}" placeholder="搜索您要的咨询" placeholder-style="color:#B09A6D;" field-class="search"/>
     </view>
-    <van-tabs active="{{ active }}" bind:change="onChange" class="sub-tab" swipe-threshold="5" line-width="21" color="#DDC79B">
-        <van-tab title="全部"></van-tab>
-        <van-tab title="理财"></van-tab>
-        <van-tab title="金融"></van-tab>
-        <van-tab title="金融"></van-tab>
-        <van-tab title="其他"></van-tab>
+    
+    <view  style='height:{{navH}}px'></view><!-- 自定义导航站位 -->
+    <van-tabs active="{{ activeParent }}" bind:change="onChangeParent" class="sub-tab" swipe-threshold="5" line-width="50" color="#fff" animated bindClass="p-bg">
+        <van-tab title="专家咨询">
+            <!-- 内容1 开始咯 -->
+            <van-tabs active="{{ activeChild }}" bind:change="onChangeChild" class="sub-tab" swipe-threshold="5" line-width="21" color="#DDC79B">
+                <van-tab title="全部"></van-tab>
+                <van-tab title="理财"></van-tab>
+                <van-tab title="金融"></van-tab>
+                <van-tab title="金融"></van-tab>
+                <van-tab title="其他"></van-tab>
+            </van-tabs>
+            <view class="content" >
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">李晓明</view>
+                    <view class="p">从业年限：5年</view>
+                    <view class="p">国家二级金融分析师</view>
+                    <view class="btn">线上咨询  800积分/次</view>
+                </navigator>
+            </view>
+        </van-tab>
+        <van-tab title="产品咨询">
+            <!-- 内容2 开始咯 -->
+            <view class="content product_list">
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+                <navigator class="item" url="/">
+                    <image src="../../images/img-1.png" class="head-img"></image>
+                    <view class="name">股票咨询</view>
+                    <view class="p w60">专业的股票分析，实时股票服务</view>
+                    <view class="btn">线上咨询</view>
+                </navigator>
+            </view>
+        </van-tab>
     </van-tabs>
-    <view class="content">
-        <navigator class="item" url="/">
-            <image src="../../images/img-1.png" class="head-img"></image>
-            <view class="name">李晓明</view>
-            <view class="p">从业年限：5年</view>
-            <view class="p">国家二级金融分析师</view>
-            <view class="btn">线上咨询  800积分/次</view>
-        </navigator>
-        <navigator class="item" url="/">
-            <image src="../../images/img-1.png" class="head-img"></image>
-            <view class="name">李晓明</view>
-            <view class="p">从业年限：5年</view>
-            <view class="p">国家二级金融分析师</view>
-            <view class="btn">线上咨询  800积分/次</view>
-        </navigator>
-        <navigator class="item" url="/">
-            <image src="../../images/img-1.png" class="head-img"></image>
-            <view class="name">李晓明</view>
-            <view class="p">从业年限：5年</view>
-            <view class="p">国家二级金融分析师</view>
-            <view class="btn">线上咨询  800积分/次</view>
-        </navigator>
-        <navigator class="item" url="/">
-            <image src="../../images/img-1.png" class="head-img"></image>
-            <view class="name">李晓明</view>
-            <view class="p">从业年限：5年</view>
-            <view class="p">国家二级金融分析师</view>
-            <view class="btn">线上咨询  800积分/次</view>
-        </navigator>
-        <navigator class="item" url="/">
-            <image src="../../images/img-1.png" class="head-img"></image>
-            <view class="name">李晓明</view>
-            <view class="p">从业年限：5年</view>
-            <view class="p">国家二级金融分析师</view>
-            <view class="btn">线上咨询  800积分/次</view>
-        </navigator>
-    </view>
+    
+
+    <!-- 咨询指南 -->
+    <navigator url="../consultation_guide/consultation_guide" class="consultation-btn"><image src="../../images/zx_icon_zhinan.png" class="z-icon"></image></navigator>
 </view>

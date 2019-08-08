@@ -1,9 +1,12 @@
 {
     "pages": [
-        "pages/consultation_list/consultation_list",
+        "pages/my_index/my_index",
+        "pages/article_index/article_index",
         "pages/index/index",
-        "pages/logs/logs",
-        "pages/product_list/product_list"
+        "pages/consultation_article/consultation_article",
+        "pages/consultation_list/consultation_list",
+        "pages/consultation_guide/consultation_guide",
+        "pages/logs/logs"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -26,7 +29,7 @@
             {
                 "selectedIconPath": "images/my-nav-2-a.png",
                 "iconPath": "images/my-nav-2.png",
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/article_index/article_index",
                 "text": "文章"
             },
             {
@@ -38,7 +41,7 @@
             {
                 "selectedIconPath": "images/my-nav-4-a.png",
                 "iconPath": "images/my-nav-4.png",
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/my_index/my_index",
                 "text": "我的"
             }
         ]

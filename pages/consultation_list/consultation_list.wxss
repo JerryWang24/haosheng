@@ -1,17 +1,7 @@
 /* pages/consultation_list.wxss */
-.consultation_list .van-hairline--top-bottom::after {
-    border-width: 0 0;
-}
-.sub-tab .van-tab{
-    color: #333;
-    font-size: 28rpx;
-}
-.sub-tab .van-tab--active{
-    font-weight: bold;
-}
 .content{
     padding: 0 20rpx 30rpx;
-    overflow: hidden;
+    overflow: auto;
 }
 .content .item{
     width: 344rpx;
@@ -62,4 +52,25 @@
     bottom: 20rpx;
     left: 20rpx;
     right: 20rpx;
+}
+.product_list .item .p{
+    height: 66rpx;
+    line-height:33rpx;
+    margin: 17rpx auto 0;
+    text-align: left;
+}
+.product_list .item .p.w60{
+    width: 75%;
+}
+.consultation-btn{
+    width: 126rpx;
+    height: 126rpx;
+    position: fixed;
+    bottom: 108rpx;
+    right: 21rpx;
+    z-index: 11;
+}
+.consultation-btn .z-icon{
+    width: 100%;
+    height: 100%;
 }

@@ -1,0 +1,89 @@
+<!--pages/article_index/article_index.wxml-->
+<view class='consultation_list'>
+    <!-- 自定义导航栏 -->
+    <view class="nav-tool"  style='height:{{navH}}px'>
+        <van-search value="{{ value }}" placeholder="搜索您想看的文章" placeholder-style="color:#B09A6D;" field-class="search"/>
+    </view>
+    <view class='articles-box'>
+        <van-tabs active="{{ activeParent }}" bind:change="onChangeParent" class="sub-tab fixed" swipe-threshold="3" line-width="50" color="#fff" bindClass="p-bg" style='top:{{navH}}px'>
+            <van-tab title="全部"></van-tab>
+            <van-tab title="热门推荐"></van-tab>
+            <van-tab title="官方素材"></van-tab>
+            <van-tab title="VIP专属"></van-tab>
+            <van-tab title="官方素材"></van-tab>
+            <van-tab title="VIP专属"></van-tab>
+            <van-tab title="官方素材"></van-tab>
+        </van-tabs>
+        <view class='article-big-box' style='margin-top:{{navH+44}}px'>
+            <view class='article-box'>
+                <navigator class='item-box'>
+                    <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                    <view class='info-box'>
+                        <text class='btn'>VIP专属</text>
+                        <text class='date'>2019-08-9 13:24</text>
+                        <text class='from'>金融证券</text>
+                    </view>
+                </navigator>
+                <navigator class='item-box hasImgR'>
+                    <view class='title'>
+                        关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                    </view>
+                    <view class='from'>金融证券</view>
+                    <view class='info-box'>
+                        <text class='btn'>VIP专属</text>
+                        <text class='date'>2019-08-9 13:24</text>
+                    </view>
+                    <image src='/images/img-1.png'/>
+                </navigator>
+                <navigator class='item-box hasImgR'>
+                    <view class='title'>
+                        关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                    </view>
+                    <view class='info-box'>
+                        <text class='date'>2019-08-9 13:24</text>
+                        <text class='from'>金融证券</text>
+                    </view>
+                    <image src='/images/img-1.png'/>
+                </navigator>
+                <navigator class='item-box hasImgR'>
+                    <view class='title'>
+                        关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                    </view>
+                    <view class='info-box'>
+                        <text class='date'>2019-08-9 13:24</text>
+                        <text class='from'>金融证券</text>
+                    </view>
+                    <image src='/images/img-1.png'/>
+                </navigator>
+                <navigator class='item-box'>
+                    <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                    <view class='info-box'>
+                        <text class='btn'>VIP专属</text>
+                        <text class='date'>2019-08-9 13:24</text>
+                        <text class='from'>金融证券</text>
+                    </view>
+                </navigator>
+                <navigator class='item-box hasImgR'>
+                    <view class='title'>
+                        关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                    </view>
+                    <view class='info-box'>
+                        <text class='date'>2019-08-9 13:24</text>
+                        <text class='from'>金融证券</text>
+                    </view>
+                    <image src='/images/img-1.png'/>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+

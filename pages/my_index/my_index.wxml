@@ -1,0 +1,49 @@
+<!--pages/my_index/my_index.wxml-->
+<view class='container'>
+    <view class='bg-line'></view>
+    <view class='com-box'>
+        <view class='infos-box'>
+            <image src='/images/img-1.png'/>
+            <view class='r-box'>
+                <view class='name'>用户昵称</view>
+                <view class='role'>普通用户</view>
+            </view>
+        </view>
+        <view class='bottom-box'>
+            <text class='item-box'>积分\n345</text>
+            <navigator class='item-box'>收藏</navigator>
+        </view>
+    </view>
+    <!-- 分割线 -->
+    <view class='com-title'>我的咨询</view>
+    <view class='com-box'>
+        <view class='zx-box'>
+            <navigator class='item-box'>
+                <image src='/images/my_icon_chuli.png'/>
+                <view class='p'>待处理</view>
+            </navigator>
+            <navigator class='item-box'>
+                <image src='/images/my_icon_duijie.png'/>
+                <view class='p'>对接中</view>
+            </navigator>
+            <navigator class='item-box'>
+                <image src='/images/my_icon_pingjia.png'/>
+                <view class='p'>已完成/评价</view>
+            </navigator>
+        </view>
+    </view>
+    <view class='com-title'>客户经理列表</view>
+    <view class='com-box'>
+        <view class='infos-box other'>
+            <image src='/images/img-1.png'/>
+            <view class='r-box'>
+                <view class='name'>用户昵称</view>
+                <text class='role'>产品经理\n18529298113</text>
+            </view>
+        </view>
+        <view class='bottom-box other'>
+            <view class='item-box' bindtap='onCall'><image src='/images/my_icon_dianhua.png' mode='widthFix'/>拨打电话</view>
+            <navigator class='item-box'><image src='/images/my_icon_weixin.png' mode='widthFix'/>加我微信</navigator>
+        </view>
+    </view>
+</view>

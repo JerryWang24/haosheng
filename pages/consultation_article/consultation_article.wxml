@@ -1,0 +1,15 @@
+<!--pages/consultation_article/consultation_article.wxml-->
+<view class="consultation_article">
+    <view class="item c-info">
+        <view class="row">
+            <view class="head-img"><image src="../../images/zx_icon_zhinan.png" class="z-icon"></image></view>
+            <view class="detail">
+                <view class="name">李晓明 <view class="eval">4.7分</view></view>
+                <view class="p">国家二级金融分析师</view>
+                <view class="p">从业年限：5年</view>
+                <view class="p">广东 广州  线上咨询</view>
+            </view>
+        </view>
+        <van-cell title="预约费用" value="800积分" />
+    </view>
+</view>

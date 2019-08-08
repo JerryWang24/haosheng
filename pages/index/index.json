@@ -1,6 +1,7 @@
 {
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "van-search": "../../components/search/index"
-  }
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "van-search": "../../components/search/index",
+        "van-icon": "../../components/icon/index"
+    }
 }

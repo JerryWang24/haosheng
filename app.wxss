@@ -46,3 +46,55 @@ body{
     margin-left: -50rpx;
     z-index: 11;
 }
+.nav-tool{
+  width: 100%;
+  background:rgba(221,199,155,1);
+  overflow: hidden;
+  position: fixed;
+  font-weight: lighter;
+  top:0;
+  left: 0;
+  z-index: 23;
+}
+.nav-tool .van-icon{
+    color: #B09A6D !important;  
+    font-size: 40rpx !important;  
+}
+.p-bg{
+    background: #DDC79B !important;
+}
+.van-tabs__line{
+    bottom: 8rpx !important;
+    height: 8rpx !important;
+}
+.consultation_list .van-hairline--top-bottom::after {
+    border-width: 0 0;
+}
+.sub-tab.fixed{
+    position: fixed;
+    left: 0;
+    z-index: 43;
+    width: 100%;
+}
+.sub-tab .van-tab{
+    color: #333;
+    font-size: 28rpx;
+}
+.sub-tab .van-tab--active{
+    font-weight: bold;
+}
+.com-title{
+    padding:25rpx 0 25rpx 54rpx;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 34rpx;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+}
+.com-title .van-icon{
+    position: absolute;
+    top:50%;
+    right: 35rpx;
+    transform: translateY(-50%);
+}

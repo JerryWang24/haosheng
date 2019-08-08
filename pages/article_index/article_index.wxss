@@ -1,0 +1,8 @@
+/* pages/article_index/article_index.wxss */
+@import '../index/index';
+.article-big-box{
+    padding: 20rpx 0;
+}
+.article-box .item-box{
+    padding:18rpx 31rpx 14rpx;
+}
