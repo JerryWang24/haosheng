@@ -1,0 +1,3 @@
+/* pages/my_like/my_like.wxss */
+@import '../consultation_list/consultation_list';
+@import '../article_index/article_index';

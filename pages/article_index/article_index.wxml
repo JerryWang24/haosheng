@@ -16,7 +16,7 @@
         </van-tabs>
         <view class='article-big-box' style='margin-top:{{navH+44}}px'>
             <view class='article-box'>
-                <navigator class='item-box'>
+                <navigator class='item-box' url='../article_details/article_details'>
                     <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
                     <view class='info-box'>
                         <text class='btn'>VIP专属</text>

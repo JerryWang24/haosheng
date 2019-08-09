@@ -3,15 +3,15 @@
     <view class='bg-line'></view>
     <view class='com-box'>
         <view class='infos-box'>
-            <image src='/images/img-1.png'/>
+            <image src='/images/my_user_weidenglu.png'/>
             <view class='r-box'>
-                <view class='name'>用户昵称</view>
-                <view class='role'>普通用户</view>
+                <view class='name unlogin'>用户昵称</view>
+                <view class='role' hidden='true'>普通用户</view>
             </view>
         </view>
         <view class='bottom-box'>
-            <text class='item-box'>积分\n345</text>
-            <navigator class='item-box'>收藏</navigator>
+            <text class='item-box'>积分\n0</text>
+            <navigator class='item-box' url="../my_like/my_like">收藏</navigator>
         </view>
     </view>
     <!-- 分割线 -->

@@ -1,0 +1,123 @@
+<!--pages/my_like/my_like.wxml-->
+<view class='consultation_list'>
+    <view class='articles-box'>
+        <van-tabs active="{{ activeParent }}" bind:change="onChangeParent" class="sub-tab" swipe-threshold="2" line-width="50" color="#fff" bindClass="p-bg" animated sticky>
+            <van-tab title="咨询">
+                <view class="content" >
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                    <navigator class="item" url="/">
+                        <image src="../../images/img-1.png" class="head-img"></image>
+                        <view class="name">李晓明</view>
+                        <view class="p">从业年限：5年</view>
+                        <view class="p">国家二级金融分析师</view>
+                        <view class="btn">线上咨询  800积分/次</view>
+                    </navigator>
+                </view>
+            </van-tab>
+            <van-tab title="文章">
+                <view class='article-big-box'>
+                    <view class='article-box'>
+                        <navigator class='item-box'>
+                            <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                            <view class='info-box'>
+                                <text class='btn'>VIP专属</text>
+                                <text class='date'>2019-08-9 13:24</text>
+                                <text class='from'>金融证券</text>
+                            </view>
+                        </navigator>
+                        <navigator class='item-box hasImgR'>
+                            <view class='title'>
+                                关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                            </view>
+                            <view class='from'>金融证券</view>
+                            <view class='info-box'>
+                                <text class='btn'>VIP专属</text>
+                                <text class='date'>2019-08-9 13:24</text>
+                            </view>
+                            <image src='/images/img-1.png'/>
+                        </navigator>
+                        <navigator class='item-box hasImgR'>
+                            <view class='title'>
+                                关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                            </view>
+                            <view class='info-box'>
+                                <text class='date'>2019-08-9 13:24</text>
+                                <text class='from'>金融证券</text>
+                            </view>
+                            <image src='/images/img-1.png'/>
+                        </navigator>
+                        <navigator class='item-box hasImgR'>
+                            <view class='title'>
+                                关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                            </view>
+                            <view class='info-box'>
+                                <text class='date'>2019-08-9 13:24</text>
+                                <text class='from'>金融证券</text>
+                            </view>
+                            <image src='/images/img-1.png'/>
+                        </navigator>
+                        <navigator class='item-box'>
+                            <view class='title'>关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的</view>
+                            <view class='info-box'>
+                                <text class='btn'>VIP专属</text>
+                                <text class='date'>2019-08-9 13:24</text>
+                                <text class='from'>金融证券</text>
+                            </view>
+                        </navigator>
+                        <navigator class='item-box hasImgR'>
+                            <view class='title'>
+                                关键时刻，特朗普为何要对“墨西哥制造”下手，其背后有何最终目的
+                            </view>
+                            <view class='info-box'>
+                                <text class='date'>2019-08-9 13:24</text>
+                                <text class='from'>金融证券</text>
+                            </view>
+                            <image src='/images/img-1.png'/>
+                        </navigator>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>
